@@ -1,0 +1,1 @@
+{"rule":"LOT_OF","sentence":"^\\QAs seen below the p-value from the analysis of 0.061 is higher than the 0.05 confidence value which results in the rejection of the null hypothesis that the lot values differ from the population mean.\\E$"}
