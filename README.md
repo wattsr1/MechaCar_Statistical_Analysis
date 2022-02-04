@@ -52,7 +52,7 @@ As we observed large differences in the variations between lots, t-tests for the
 
 <img src="Resources/TTest_Lot2_Pop_Coil.png" width="300" height="150">
 
-<img src="Resources/TTest_lot3_Pop_Coil.png" width="300" height="150">
+<img src="Resources/TTest_Lot3_Pop_Coil.png" width="300" height="150">
 
 ### T-Tests Between Lots
 
@@ -91,6 +91,8 @@ Some key factors for consumers would consider the following:
 The factors listed above are not a complete list but are factors that should be considered when evaluating the new vehicle. Though not an exhaustive list the table below gives some examples of the analysis that can be completed on the data to determine how the MechaCar measures up to the competition base on the analysis of the data collected.  It is important to note that the larger the dataset that can be tested against the MechaCar data the more confident we can be on the conclusions being made.
 
 <img src="Resources/stat_test_table.png" width="600" height="400">
+
+---
 
 
 
