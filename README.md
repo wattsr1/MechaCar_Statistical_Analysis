@@ -112,6 +112,7 @@ The initial analysis was to determine if the total sample of the coil compressio
 
 As we observed large differences in the variations between lots, t-tests for the mean of the compression values for each lot against the population mean can determine if there are significant differences observed.  As seen below in the individual t-Tests, the p-values for lot 1 and lot 2 were greater than the 0.05 confidence values resulting in a failure to reject of the null hypothesis that the lot means are the same as the population mean.  Lot 3 however had a p-value of 0.046 which results in the rejection of the null hypothesis and indicating that that lot varies significantly from the population mean.
 
+<<<<<<< HEAD
 <table>
   <tr>
     <td>t-Test of Lot 1 vs Population Mean </td>
@@ -124,6 +125,13 @@ As we observed large differences in the variations between lots, t-tests for the
     <td><img src="Resources/TTest_lot3_Pop_Coil.png" width="300"></td>
   </tr>
 </table>
+=======
+<img src="Resources/TTest_Lot1_Pop_Coil.png" width="300" height="150">
+
+<img src="Resources/TTest_Lot2_Pop_Coil.png" width="300" height="150">
+
+<img src="Resources/TTest_Lot3_Pop_Coil.png" width="300" height="150">
+>>>>>>> d5bb57481fc26ccd8261eb5d83a141114f614b78
 
 ### T-Tests Between Lots
 
@@ -179,6 +187,8 @@ Some key factors for consumers would consider the following:
 The factors listed above are not a complete list but are factors that should be considered when evaluating the new vehicle. Though not an exhaustive list the table below gives some examples of the analysis that can be completed on the data to determine how the MechaCar measures up to the competition base on the analysis of the data collected.  It is important to note that the larger the dataset that can be tested against the MechaCar data the more confident we can be on the conclusions being made.
 
 <img src="Resources/stat_test_table.png" width="800">
+
+---
 
 
 
