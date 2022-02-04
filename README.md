@@ -99,7 +99,7 @@ The distributions for each lot was also visualized using density plots to ensure
 
 It has been established that the population mean of the coil compression is a value of 1500 PSI for which all data can be compared against to ensure they are within an acceptable range.  To do this, t-Tests of the means of the samples collected can be compared against the population mean.  If the p-values calculated from these the one sample t-Test is above the 95% confidence level (0.05) the null hypothesis that the value is the same the population mean of 1500 cannot be rejected.  
 
-The initial analysis was to determine if the total sample of the coil compression data was compared against the population mean.  As seen below the p-value from the analysis of 0.061 is higher than the 0.05 confidence value which results in the failure to reject the null hypothesis that the manufacturing lot values differ from the population mean.  This is similar to the findings observed in the summary statistics presented in the previous section.
+The initial analysis was to determine if the total sample of the coil compression data was compared against the population mean.  As seen below the p-value from the analysis of 0.061 is higher than the 0.05 confidence value which results in the failure to reject the null hypothesis that the manufacturing lot values are the same as the population mean.  This is similar to the findings observed in the summary statistics presented in the previous section.
 
 <table>
   <tr>
@@ -110,28 +110,20 @@ The initial analysis was to determine if the total sample of the coil compressio
   </tr>
 </table>
 
-As we observed large differences in the variations between lots, t-tests for the mean of the compression values for each lot against the population mean can determine if there are significant differences observed.  As seen below in the individual t-Tests, the p-values for lot 1 and lot 2 were greater than the 0.05 confidence values resulting in a failure to reject of the null hypothesis that the lot means are the same as the population mean.  Lot 3 however had a p-value of 0.046 which results in the rejection of the null hypothesis and indicating that that lot varies significantly from the population mean.
+As we observed large differences in the variations between lots, t-tests for the mean of the compression values for each lot against the population mean can determine if there are significant differences observed.  As seen below in the individual t-Tests, the p-values for lot 1 and lot 2 were greater than the 0.05 confidence values resulting in a failure to reject of the null hypothesis that the lot means are the same as the population mean.  Lot 3 however had a p-value of 0.046 which results in the rejection of the null hypothesis and indicates that that lot varies significantly from the population mean.
 
-<<<<<<< HEAD
 <table>
   <tr>
-    <td>t-Test of Lot 1 vs Population Mean </td>
-    <td>t-Test of Lot 2 vs Population Mean </td>
-    <td>t-Test of Lot 3 vs Population Mean </td>
+    <td>One Sample t-Test of Lot 1 vs Population Mean </td>
+    <td>One Sample t-Test of Lot 2 vs Population Mean </td>
+    <td>One Sample t-Test of Lot 3 vs Population Mean </td>
   </tr>
   <tr>
     <td><img src="Resources/TTest_Lot1_Pop_Coil.png" width="300"></td>
     <td><img src="Resources/TTest_Lot2_Pop_Coil.png" width="300"></td>
-    <td><img src="Resources/TTest_lot3_Pop_Coil.png" width="300"></td>
+    <td><img src="Resources/TTest_Lot3_Pop_Coil.png" width="300"></td>
   </tr>
 </table>
-=======
-<img src="Resources/TTest_Lot1_Pop_Coil.png" width="300" height="150">
-
-<img src="Resources/TTest_Lot2_Pop_Coil.png" width="300" height="150">
-
-<img src="Resources/TTest_Lot3_Pop_Coil.png" width="300" height="150">
->>>>>>> d5bb57481fc26ccd8261eb5d83a141114f614b78
 
 ### T-Tests Between Lots
 
@@ -145,7 +137,7 @@ With the analysis of the mean and variance observed in the various lots studied 
     <td><img src="Resources/TTest_lot1_lot2.png" width="400"></td>
   </tr>
 </table>
-When looking at the T-Test conducted of lot 3 against lot 1 and lot 2, the p-values were lower than the confidence interval of 0.05 for both tests.  This indicates that we can reject the null hypothesis that the difference between the means of lot 1 and lot 2 to the mean of the values in lot 3 which determines that there is a significant difference in the values in lot 3.  This confirms the observed variation found in the summary statistics presented for each lot presented earlier.
+When looking at the T-Test conducted of lot 3 against lot 1 and lot 2, the p-values were lower than the confidence interval of 0.05 for both tests.  This indicates that we can reject the null hypothesis that the difference between the means of lot 1 and lot 2 to the mean of the values in lot 3 equal 0, which determines that there is a significant difference in the values in lot 3.  This confirms the observed variation found in the summary statistics presented for each lot presented earlier.
 
 <table>
   <tr>
@@ -158,7 +150,7 @@ When looking at the T-Test conducted of lot 3 against lot 1 and lot 2, the p-val
   </tr>
 </table>
 
-The analysis of variance of the compression data for each lot confirms the analysis using the T-Tests for each lot in the study.  The ANOVA show that there is significant variance between the lots as seen in the ANOVA table below.  This confirms that there is a significant variance observed between lot values.  As the analysis of the factors is greater than 2 (3 lots in total) an ANOVA test reduces the Type 1 error by comparing all data against each other rather than individual T-Test which confounds the chance of Type 1 error for each test completed. Validation using the ANOVA confirms the significance of the finding of the T-Test and increases our confidence in the conclusions that can be made.
+The analysis of variance of the compression data for each lot confirms the analysis using the T-Tests for each lot in the study.  The ANOVA show that there is significant variance between the lots as seen in the ANOVA table below.  This confirms that there is a significant variance observed between lot values.  As the analysis of the factors is greater than 2 (3 lots in total) an ANOVA test reduces the Type 1 error by comparing all data against each other rather than individual T-Test which confounds the chance of Type 1 error for each test completed. The ANOVA analysis has a null hypothesis that there is no difference in the mean values of each lot.  From the analysis the F-values of 0.014 is less than the signifigance value of 0.05 resulting in the rejection of the null hypothesis and indicating that there is a significant variance observed between the lot means.  Validation using the ANOVA confirms the significance of the finding of the T-Test and increases our confidence in the conclusions that can be made.
 
 <table>
   <tr>
