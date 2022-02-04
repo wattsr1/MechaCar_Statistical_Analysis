@@ -30,7 +30,7 @@ In the development of the new concept car, quality control of the components tha
 
 <img src="Resources/lot_summary_coils.png" width="400" height="125">
 
-The summary statistics show that when the total set of springs are evaluated to show the mean, median, variance and SD, the springs meet the maximum 100 PSI variance required by the manufacturer.  As seen in the summary of the whole dataset the springs appear to meet the manufacturing quality guidelines with a variance of 63.3 PSI for all coils however when the analysis is done for each lot we can observe that Lot 3 does not meet the criteria and should be recalled.  As observed in the table above the variance observed in lot 3 was 170.3 which 70% higher than the maxiumum variance acceptable from the manufacturer.  This is compared to the various observed in lots 1 and 2 which were .98 and7.47 respectively. 
+The summary statistics show that when the total set of springs are evaluated to show the mean, median, variance and SD, the springs meet the maximum 100 PSI variance required by the manufacturer.  As seen in the summary of the whole dataset the springs appear to meet the manufacturing quality guidelines with a variance of 63.3 PSI for all coils however when the analysis is done for each lot we can observe that Lot 3 does not meet the criteria and should be recalled.  As observed in the table above the variance observed in lot 3 was 170.3 which 70% higher than the maximum variance acceptable from the manufacturer.  This is compared to the variance observed in lots 1 and 2 which were .98 and 7.47 respectively. 
 
 <img src="Resources/Manufacturing_Lot_Boxplots.png" width="400" height="400">
 
@@ -40,27 +40,27 @@ This is further illustrated in the box plots of the data for each plot which cle
 
 ### T-Test of Lots Against Population mean
 
-It has been established that the population mean of the coil compression is a value of 1500 PSI for which all data can be compared against to ensure they are within an acceptable range.  To do this, t-Tests of the means of the samples collected can be compared against the population mean.  If the p-values calculated from these the one sample t-Test is above the 95% confidence level (0.05) the null hypothesis that the value is different from the population mean of 1500 can be rejected.  
+It has been established that the population mean of the coil compression is a value of 1500 PSI for which all data can be compared against to ensure they are within an acceptable range.  To do this, t-Tests of the means of the samples collected can be compared against the population mean.  If the p-values calculated from these the one sample t-Test is above the 95% confidence level (0.05) the null hypothesis that the value is the same the population mean of 1500 cannot be rejected.  
 
-The initial analysis was to determine if the total sample of the coil compression data was compared against the population mean.  As seen below the p-value from the analysis of 0.061 is higher than the 0.05 confidence value which results in the rejection of the null hypothesis that the lot values differ from the population mean.  This is similar to the findings observed in the summary statistics presented in the previous section.
+The initial analysis was to determine if the total sample of the coil compression data was compared against the population mean.  As seen below the p-value from the analysis of 0.061 is higher than the 0.05 confidence value which results in the failure to reject the null hypothesis that the manufacturing lot values differ from the population mean.  This is similar to the findings observed in the summary statistics presented in the previous section.
 
-<img src="Resources/TTest_lot1_lot2.png" width="300" height="150">
+<img src="Resources/TTest_Sample_Pop_Coil.png" width="300" height="150">
 
-As we observed large differences in the variations between lots, t-tests for the mean of the compression values for each lot against the population mean can determine if there are significant differences observed.  As seen below in the individual t-Tests, the p-values for lot 1 and lot 2 were greater than the 0.05 confidence values allow the rejection of the null hypothesis that they differ from the population mean.  Lot 3 however had a p-value of 0.046 which results in an acceptance of the null hypothesis and indicating that that lot varies significantly form the population mean.
+As we observed large differences in the variations between lots, t-tests for the mean of the compression values for each lot against the population mean can determine if there are significant differences observed.  As seen below in the individual t-Tests, the p-values for lot 1 and lot 2 were greater than the 0.05 confidence values resulting in a failure to reject of the null hypothesis that the lot means are the same as the population mean.  Lot 3 however had a p-value of 0.046 which results in the rejection of the null hypothesis and indicating that that lot varies significantly from the population mean.
 
-<img src="Resources/TTest_lot1_lot2.png" width="300" height="150">
+<img src="Resources/TTest_Lot1_Pop_Coil.png" width="300" height="150">
 
-<img src="Resources/TTest_lot1_lot3.png" width="300" height="150">
+<img src="Resources/TTest_Lot2_Pop_Coil.png" width="300" height="150">
 
-<img src="Resources/TTest_lot2_lot3.png" width="300" height="150">
+<img src="Resources/TTest_lot3_Pop_Coil.png" width="300" height="150">
 
 ### T-Tests Between Lots
 
-With the analysis of the mean and variance observed in the various lots studied a t-Test was conducted to determine if there is a statistically significant difference between the means of the compression observed between the lots.  To complete this each lot was compared to each other to test the significance of the difference between the means. As seen in the data below in the t-Test conducted between lot 1 and lot 2 the p-value of 0.6283 is larger than the confidence interval 0.05 which indicates that there is no statistical difference between the means of the two lots.  
+With the analysis of the mean and variance observed in the various lots studied a t-Test was conducted to determine if there is a statistically significant difference between the means of the compression observed between the lots.  To complete this each lot was compared to each other to test the significance of the difference between the means using a two sample t-Test. As seen in the data below in the t-Test conducted between the values in lot 1 to the values in lot 2 the p-value of 0.6283 is larger than the confidence interval 0.05 which results in a failure to reject the null hypothesis that the difference in the means of the two lots is 0 which indicates that there is no statistical difference between the means of the two lots.  
 
 <img src="Resources/TTest_lot1_lot2.png" width="300" height="150">
 
-When looking at the T-Test conducted of lot 3 against lot 1 and lot 2, the p-values were lower than the confidence interval of 0.05 for both tests.  This mean we can determine that the mean of the compression values in lot 3 were significantly different that those observed in lot 1 and lot 2.  This confirms the significance of the variation observed in the summary statistics presented for each lot showing the high variance in lot 3.
+When looking at the T-Test conducted of lot 3 against lot 1 and lot 2, the p-values were lower than the confidence interval of 0.05 for both tests.  This indicates that we can reject the null hypothesis that the difference between the means of lot 1 and lot 2 to the mean of the values in lot 3 which determines that there is a significant difference in the values in lot 3.  This confirms the observed variation found in the summary statistics presented for each lot presented earlier.
 
 <img src="Resources/TTest_lot1_lot3.png" width="300" height="150">
 
